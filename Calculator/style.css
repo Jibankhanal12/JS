@@ -1,0 +1,49 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #01161e;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.display-calculator {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  outline-style: none;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.display-calculator > button {
+  cursor: pointer;
+  font-size: 21px;
+  color: white;
+  border: 1px, solid, #ffffff;
+  background-color: #124559;
+}
+.display-calculator > button:hover {
+  background-color: #598392;
+}
+.AC-button {
+  grid-column: span 2;
+}
+.output-screen {
+  background-color: #eff6e0;
+  grid-column: 1/-1;
+  display: flex;
+  padding: 10px;
+  /*align the items in the end of the container*/
+  align-items: flex-end;
+  flex-direction: space-around;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.output-screen .history-screen {
+  font-size: 21px;
+  color: rgba(43, 44, 44, 0.5);
+}
+.output-screen .current-screen {
+  font-size: 21px;
+  color: black;
+}
