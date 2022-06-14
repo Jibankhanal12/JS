@@ -1,0 +1,15 @@
+.nav-bar{
+    background-color: bisque;
+    height: 50px;
+
+}
+.blog-content{
+    background-color:lightblue;
+    height: 50px;
+
+}
+.blog-footer{
+    background-color:lightgreen;
+    height: 50px;
+
+}
